@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub API</title>
+    <link rel="stylesheet" href="">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>GitHub Repositórios</h1>
+    </header>
+
+        <p>Preencha o nome do usuário que você deseja ver as informações</p>
+            
+            <input type = text id="campoTexto">
+            <button type = "submit" id="pesquisar" class="botaoEnviar" onclick=""> Enviar <i class="fa fa-search"></i></button>        
+            <div id="layout"></div>
+
+    <footer class="rodapé"></footer>
+    
+    <script src="src/Model/ModelGit.js"></script>
+    <script src="src/View/ViewGit.js"></script>
+    <script src="src/Controller/ControllerReq.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
