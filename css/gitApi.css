@@ -1,0 +1,66 @@
+
+body{ 
+    padding: 0; 
+    margin: 0;
+    background-color: #e6e6e6;
+    text-align: center;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(5, 5, 5);
+    width: 100%;
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    font-family: 'Righteous', cursive;
+    font-weight: bold; 
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.descricao{
+    align-items: center;
+    justify-content: center;
+    margin: 0 15%; 
+    font-family: 'ABeeZee', sans-serif;
+    color: black;
+    padding: 40px;
+}
+
+#campoTexto{
+    font-family: 'ABeeZee', sans-serif;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 80%;
+    font-weight: bold; 
+}
+
+.botaoEnviar{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold; 
+}
+
+
+.rodape{
+   /* display:flex;*/
+    justify-content: space-around;
+    align-items: flex-end;  
+    padding: 25px;
+    background: rgb(5, 5, 5);
+    text-align: center;
+    margin-top: 50%;
+}
+
+.copyright{
+    color: rgb(255, 255, 255);
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold; 
+}

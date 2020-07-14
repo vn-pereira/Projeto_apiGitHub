@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub API</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/gitApi.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
@@ -15,13 +18,15 @@
         <h1>GitHub Repositórios</h1>
     </header>
 
-        <p>Preencha o nome do usuário que você deseja ver as informações</p>
+        <p class="descricao">Preencha o nome do usuário que você deseja ver as informações</p>
             
-            <input type = text id="campoTexto">
-            <button type = "submit" id="pesquisar" class="botaoEnviar" onclick=""> Enviar <i class="fa fa-search"></i></button>        
+            <input type= text id="campoTexto">
+            <button type= "submit" id="pesquisar" class="botaoEnviar" onclick=""> Enviar <i class="fa fa-search"></i></button>        
             <div id="layout"></div>
 
-    <footer class="rodapé"></footer>
+    <footer class="rodape">
+        <P class="copyright">&copy; Copyright GitHub Api - 2020</P>
+    </footer>
     
     <script src="src/Model/ModelGit.js"></script>
     <script src="src/View/ViewGit.js"></script>
