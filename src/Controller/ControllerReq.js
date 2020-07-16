@@ -12,10 +12,9 @@ class ControllerReq{
         requisicao.addEventListener("load", ()=> {
             if(requisicao.status == 200){ 
                 let respostaApi = JSON.parse(requisicao.responseText);
-                console.log(respostaApi);
-                let montaLogin = new ModelGit (respostaApi.avatar_url, respostaApi.login, respostaApi.repos_url);
+                //console.log(respostaApi);
+                let montaLogin = new ModelGit (respostaApi.avatar_url, respostaApi.login, respostaApi.repos_url); //pegando os elementos API
                 //console.log(ViewGit.paginaUsuario(this.geraUsuario));
-                let informacaoUser = document.getElementById('layout');
                 informacaoUser.innerHTML = ViewGit.paginaUsuario(montaLogin.loginUsuario());
             }
             
