@@ -1,13 +1,15 @@
 // model repositório
 
 class ModelRepos {
-    constructor(nomeRepositorio){
+    constructor(nomeRepositorio, urlrepositorio){
         this._nomeRepositorio = nomeRepositorio;
+        this._urlrepositorio = urlrepositorio;
     }
 
     repositorioGit(){
         return {
-            nomeRepositorio: this._nomeRepositorio
+            nomeRepositorio: this._nomeRepositorio,
+            urlrepositorio: this._urlrepositorio
         };
     };
 };

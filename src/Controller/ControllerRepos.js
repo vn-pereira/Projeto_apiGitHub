@@ -14,8 +14,8 @@ class ControllerRepos{
                 let respostaRepos = JSON.parse(requisicao2.responseText);
                 
                 for (let i of respostaRepos){
-                    let montaRepos = new ModelRepos(i.name); //pegando os repositórios da API
-                    //console.log(i.name);
+                    let montaRepos = new ModelRepos(i.name, i.html_url); //pegando os repositórios da API
+                    console.log(i.html_url);
                     criaRepositorio.innerHTML+= ViewRepos.paginaRepositorio(montaRepos.repositorioGit());
                 }              
             }  
